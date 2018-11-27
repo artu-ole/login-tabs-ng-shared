@@ -1,0 +1,34 @@
+// Add your native dependencies here:
+
+// Uncomment to add recyclerview-v7 dependency
+//dependencies {
+//	compile 'com.android.support:recyclerview-v7:+'
+//}
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "org.nativescript.logintabsngshared" 
+    
+    //override supported platforms
+    // ndk {
+    //       abiFilters.clear()
+    //   		abiFilters "armeabi-v7a"
+ 		// }
+  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 
+
+// configurations.all {
+//   resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//     def requested = details.requested
+//     if (requested.group == "com.android.support") {
+//       if (!requested.name.startsWith("multidex")) {
+//         details.useVersion "26.+"
+//       }
+//     }
+//   }
+// }
